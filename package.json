@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.spec.js --exit"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,17 @@
     "@sendgrid/mail": "^6.3.1",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
+    "chai": "^4.1.2",
     "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
+    "mocha": "^5.2.0",
     "morgan": "^1.9.0",
+    "nightmare": "^3.0.1",
     "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0"
   }
 }
