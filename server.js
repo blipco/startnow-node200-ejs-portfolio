@@ -8,6 +8,7 @@ const sgMail = require('@sendgrid/mail');
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended:true }));
+app.use(express.static('css'))
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
@@ -16,12 +17,16 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get('/about', (req, res) => {
-    res.render('about');
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio');
 });
 
 app.get('/contact', (req, res) => {
     res.render('contact');
+});
+
+app.get('/resume', (req, res) => {
+    res.render('resume');
 });
   
 app.post('/thanks', (req, res) => {

@@ -4,7 +4,23 @@
     <link rel="stylesheet" href="styles.css">
     <title>Tom Thanks You</title>
   </head>
-  <body>
+  <body class='container'>
+      <ul class="nav nav-tabs justify-content-center" id="navbar">
+          <li class="nav-link active">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link active" href="contact">Contact</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link active" href="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-link active">
+            <a class="nav-link active" href="resume">Resume</a>
+          </li>
+        </ul>
+        <h1 class="text-center display-4 text-white">BOBBY PATTERSON</h1>
+    <h2 class="text-center text-white">San Diego Software Developer</h2>
     <div>
       Thank you <%= contact.firstName %> <%= contact.lastName %>.
     </div>

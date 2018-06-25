@@ -1,0 +1,7 @@
+html, body {
+    background: url(san-diego-night.jpg) no-repeat top fixed; 
+    background-size: 100% 70%;
+}
+#bobby {
+    border-radius: 40%;
+}
